@@ -1,6 +1,7 @@
 package com.example.rv.model
 
 import android.util.Log
+import com.example.rv.UserNotFoundException
 import com.github.javafaker.Faker
 import java.util.*
 
@@ -29,6 +30,14 @@ class UsersService {
         return users
     }
 
+    fun getById(id: Long): UserDetails {
+        val user: User = users.firstOrNull { it.id == id } ?: throw UserNotFoundException()
+        return UserDetails(
+            user = user,
+            details = Faker.instance().lorem().paragraphs(3).joinToString ("\n\n")
+        )
+    }
+
     fun deleteUser(user: User) {
         val indexToDelete = users.indexOfFirst { it.id == user.id }
         if (indexToDelete != -1) {
@@ -53,7 +62,7 @@ class UsersService {
     }
 
     fun removeListener(listener: UsersListener) {
-        listeners.remove (listener)
+        listeners.remove(listener)
     }
 
     private fun notifyChanges() {

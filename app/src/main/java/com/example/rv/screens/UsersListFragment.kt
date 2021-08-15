@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.rv.Navigation
 import com.example.rv.UserActionListener
 import com.example.rv.UsersAdapter
 import com.example.rv.databinding.UsersListFragmentBinding
@@ -42,10 +43,11 @@ class UsersListFragment : Fragment() {
 
             override fun onUserDelete(user: User) {
                 viewModel.deleteUser(user)
+
             }
 
             override fun onUserDetails(user: User) {
-
+                navigator().showDetails(user)
             }
 
         })
