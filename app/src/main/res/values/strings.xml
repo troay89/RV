@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">RV</string>
+    <string name="move_up">вверх</string>
+    <string name="move_down">вниз</string>
+    <string name="remove">удалить</string>
+    <string name="failed_to_load_users">ошибка при загрузки пользавателей</string>
+    <string name="try_again">попробавать снова</string>
+    <string name="no_users">нет пользавателя</string>
+    <string name="user_has_been_deleted">пользаватель был удалён</string>
+    <string name="cant_load_user_details">не возможно загрузить детали пользавателя</string>
+    <string name="cant_delete_user">невозможно удалить пользавателя</string>
+    <string name="cant_move_user">невозможно переместить пользателя</string>
 </resources>

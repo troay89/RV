@@ -5,6 +5,9 @@
       <map>
         <entry key="..\:/Users/R-12/AndroidStudioProjects/RV/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/R-12/AndroidStudioProjects/RV/app/src/main/res/layout/item_user.xml" value="0.33" />
+        <entry key="..\:/Users/R-12/AndroidStudioProjects/RV/app/src/main/res/layout/user_details_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/R-12/AndroidStudioProjects/RV/app/src/main/res/layout/users_details_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/R-12/AndroidStudioProjects/RV/app/src/main/res/layout/users_list_fragment.xml" value="0.22" />
       </map>
     </option>
   </component>
